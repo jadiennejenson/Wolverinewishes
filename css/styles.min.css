@@ -9,5 +9,122 @@ img,.wish-kid-image,.hero-container img,.reviews section img,.services section i
 main{max-width:960px;margin:0 auto;padding:1rem 0.5rem;box-sizing:border-box}h1{margin:1.25rem 0 0.75rem;padding:0 0.5rem;font-weight:300}
 h2{margin:1rem 0 0.5rem;padding:0 0.5rem;font-weight:400}
 p{margin:0 0 1rem;padding:0 0.5rem;line-height:1.6;color:#333}/* increase spacing on medium+ screens */
-@media (min-width:35rem){main{padding:1rem 1.5rem}h1,h2,p{padding:0 1rem}h1{margin-top:1.5rem}}/* wider screens */
-@media (min-width:64rem){main{padding:1.5rem 2rem}h1{margin-top:2rem}h2{margin-top:1.25rem}}.hero-image-wrapper{position:relative;display:flex;justify-content:center;align-items:center;margin:1rem auto}.hero-image-wrapper img{display:block;width:100%;max-width:900px;height:auto;border-radius:1rem}.hero-button-row{position:absolute;inset:0;display:flex;justify-content:center;align-items:center;gap:1rem;z-index:1}.hero-button-row a,.hero-button-row button{display:inline-flex;align-items:center;justify-content:center;min-width:160px;padding:.8rem 1.5rem;border:0;border-radius:999px;background:linear-gradient(135deg,#007bff,#2e90e1);color:#fff;font-weight:600;text-decoration:none;box-shadow:0 8px 20px rgba(0,123,255,.25);transition:transform .2s ease,box-shadow .2s ease,background .2s ease}.hero-button-row a:hover,.hero-button-row button:hover{transform:translateY(-2px);background:linear-gradient(135deg,#0056b3,#007bff);box-shadow:0 12px 24px rgba(0,123,255,.35)}.hero-button-row a:focus-visible,.hero-button-row button:focus-visible{outline:3px solid rgba(46,144,225,.5);outline-offset:2px}
+footer {
+  background: #d9d9d9;
+  color: #333;
+  padding: 2rem 2.5rem 1.25rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-brand .brand-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-brand .brand-mark {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.footer-brand h3 {
+  margin: 0;
+  font-size: clamp(1.5rem, 2vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.footer-brand p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #3a3a3a;
+}
+
+.footer-links {
+  display: grid;
+  gap: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.footer-links h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.footer-links a {
+  color: #2f2f2f;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact {
+  display: grid;
+  gap: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.footer-contact h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.footer-contact a,
+.footer-contact span {
+  color: #2f2f2f;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-divider {
+  max-width: 1200px;
+  margin: 1.75rem auto 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+@media (max-width: 860px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}.hero-image-wrapper{position:relative;display:flex;justify-content:center;align-items:center;margin:1rem auto}.hero-image-wrapper img{display:block;width:100%;max-width:900px;height:auto;border-radius:1rem}.hero-button-row{position:absolute;inset:0;display:flex;justify-content:center;align-items:center;gap:1rem;z-index:1}.hero-button-row a,.hero-button-row button{display:inline-flex;align-items:center;justify-content:center;min-width:160px;padding:.8rem 1.5rem;border:0;border-radius:999px;background:linear-gradient(135deg,#007bff,#2e90e1);color:#fff;font-weight:600;text-decoration:none;box-shadow:0 8px 20px rgba(0,123,255,.25);transition:transform .2s ease,box-shadow .2s ease,background .2s ease}.hero-button-row a:hover,.hero-button-row button:hover{transform:translateY(-2px);background:linear-gradient(135deg,#0056b3,#007bff);box-shadow:0 12px 24px rgba(0,123,255,.35)}.hero-button-row a:focus-visible,.hero-button-row button:focus-visible{outline:3px solid rgba(46,144,225,.5);outline-offset:2px}
