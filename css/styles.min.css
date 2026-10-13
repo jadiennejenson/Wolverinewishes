@@ -1,19 +1,96 @@
-#headerWrapper{background-color:#f8f9fa;box-shadow:0 2px 4px rgba(0,0,0,.1);padding:1rem 2rem;font-size:2.5rem;color:#2e90e1}
-#navWrapper{background-color:#f8f9fa;box-shadow:0 2px 4px rgba(0,0,0,.1);padding:1rem 2rem;font-size:1rem;color:#333}*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#333;margin:0}
-nav{background-color:#f8f9fa;box-shadow:0 2px 4px rgba(0,0,0,.1);padding:0}nav ul{list-style:none;display:flex;justify-content:center;gap:2rem;padding:1rem 2rem}
-nav a{text-decoration:none;color:#333;font-weight:500;padding:.5rem 1rem;border-radius:4px;transition:all .3s ease}
-nav a:hover{background-color:#007bff;color:#fff}/* Responsive image/layout fixes */
-img,.wish-kid-image,.hero-container img,.reviews section img,.services section img,.swiper img{display:block;width:100%;max-width:100%;height:auto;padding:0.5rem;box-sizing:border-box;margin:0 auto}
-/* Slightly larger padding and max-width caps for medium screens */@media (min-width:35rem){.wish-kid-image,.hero-container img{max-width:720px;padding:0.75rem}
-.reviews section img,.services section img{padding:0.5rem}}/* Cap image sizes on wide screens for consistent layout */@media (min-width:64rem){.wish-kid-image,.hero-container img{max-width:900px;padding:1rem}.reviews section img{max-width:200px}}
-main{max-width:960px;margin:0 auto;padding:1rem 0.5rem;box-sizing:border-box}h1{margin:1.25rem 0 0.75rem;padding:0 0.5rem;font-weight:300}
-h2{margin:1rem 0 0.5rem;padding:0 0.5rem;font-weight:400}
-p{margin:0 0 1rem;padding:0 0.5rem;line-height:1.6;color:#333}/* increase spacing on medium+ screens */
+:root {
+  --content-width: min(1200px, calc(100% - 2rem));
+}
+
+#headerWrapper {
+  background-color: #f8f9fa;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  color: #2e90e1;
+}
+
+#mainWrapper,
+.site-header,
+.footer-inner,
+.footer-bottom {
+  width: var(--content-width);
+  margin-inline: auto;
+}
+
+.site-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #2e90e1;
+  font-size: 1.5rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.brand-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  background: #dfe3e8;
+  flex-shrink: 0;
+}
+
+#navWrapper {
+  background-color: #f8f9fa;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+#navWrapper ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+#navWrapper a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: .5rem 1rem;
+  border-radius: 4px;
+  transition: all .3s ease;
+}
+
+#navWrapper a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#mainWrapper {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
 footer {
   background: #45affd;
   color: white;
   padding: 2rem 2.5rem 1.25rem;
   border-top: 1px solid rgba(0, 0, 0, 0.25);
+  text-align: left;
 }
 
 .footer-inner {
@@ -116,6 +193,63 @@ footer {
   gap: 1rem;
   font-size: 0.95rem;
   color: rgba(255, 255, 255, 0.85);
+  flex-wrap: wrap;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.hero-button {
+  appearance: none;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #007bff, #2e90e1);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0.9rem 1.6rem;
+  min-width: 150px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  flex: 1 1 180px;
+  max-width: 220px;
+}
+
+.hero-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 24px rgba(0, 123, 255, 0.28);
+  filter: brightness(1.05);
+}
+
+.hero-button:focus-visible {
+  outline: 3px solid rgba(46, 144, 225, 0.45);
+  outline-offset: 2px;
+}
+
+.hero-container {
+  width: min(900px, 100%);
+  height: clamp(260px, 45vw, 520px);
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.wish-kid-image,
+.hero-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0;
+  margin: 0;
+  border-radius: 1rem;
 }
 
 @media (max-width: 860px) {
@@ -127,4 +261,37 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
-}.hero-image-wrapper{position:relative;display:flex;justify-content:center;align-items:center;margin:1rem auto}.hero-image-wrapper img{display:block;width:100%;max-width:900px;height:auto;border-radius:1rem}.hero-button-row{position:absolute;inset:0;display:flex;justify-content:center;align-items:center;gap:1rem;z-index:1}.hero-button-row a,.hero-button-row button{display:inline-flex;align-items:center;justify-content:center;min-width:160px;padding:.8rem 1.5rem;border:0;border-radius:999px;background:linear-gradient(135deg,#007bff,#2e90e1);color:#fff;font-weight:600;text-decoration:none;box-shadow:0 8px 20px rgba(0,123,255,.25);transition:transform .2s ease,box-shadow .2s ease,background .2s ease}.hero-button-row a:hover,.hero-button-row button:hover{transform:translateY(-2px);background:linear-gradient(135deg,#0056b3,#007bff);box-shadow:0 12px 24px rgba(0,123,255,.35)}.hero-button-row a:focus-visible,.hero-button-row button:focus-visible{outline:3px solid rgba(46,144,225,.5);outline-offset:2px}
+}
+
+@media (max-width: 760px) {
+  #headerWrapper {
+    padding: 1rem;
+  }
+
+  .site-header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .brand {
+    justify-content: center;
+  }
+
+  #navWrapper ul {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero-button {
+    flex-basis: 100%;
+    max-width: none;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+

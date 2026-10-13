@@ -13,25 +13,28 @@
 </head>
 <body>
     <div id="headerWrapper">
-        <header>
-            <span>Wolverine Wishes</span>
+        <header class="site-header">
+            <div class="brand">
+                <img src="images/logo.webp" alt="Wolverine Wishes logo" class="brand-logo">
+                <span>Wolverine Wishes</span>
+            </div>
+
+            <nav id="navWrapper" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="pageants.html">Pageants</a></li>
+                    <li><a href="donation.html">Donation</a></li>
+                    <li><a href ="makeawish.html">Make-A-Wish</a></li>
+                </ul>
+            </nav>
         </header>
 
     </div>
-
-    <nav id="navWrapper">
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="pageants.html">Pageants</a></li>
-            <li><a href="donation.html">Donation</a></li>
-            <li><a href ="makeawish.html">Make-A-Wish</a></li>
-        </ul>
-    </nav>
-
     
     <div id="mainWrapper">
         <main>
             <div class="hero-container">
+                <span>Wolverine Wishes</span>
                 <img src="images/wish pagents.webp" alt="Wish Kid" class="wish-kid-image">
                 <div class="button-group">
                     <button class="hero-button">Get Involved</button>
@@ -65,7 +68,7 @@
                 Once you have a campaign on the site, you will have a log in and your own URL. 
                 This is where people donate to Make-A-Wish Utah through your campaign, that way you can tally how much you raised but not have to interact with the money. 
             </p>
-            <button class="hero-button">Donate Now</button>
+            <button class="hero-button" src="donation.html">Donate Now</button>
 
             <h2>Pageants</h2>
             <p>
@@ -75,7 +78,7 @@
                 The contestants are also required to raise money for Make-A-Wish Utah. 
                 The contestant who raises the most money is crowned the winner of the pageant and will be the face of the campaign for the year.
             </p>
-            <button class="hero-button">Apply Now</button>
+            <button class="hero-button" src="apply.html">Apply Now</button>
             
             <h2>Tickets</h2>
             <p>Ticketing is done through Campus Connection. 
@@ -85,46 +88,47 @@
                 There is a $3 transaction fee that the site gets and the guest pays at check out. 
                 Tickets are sold online and at the door. 
             </p>
-            <button class="hero-button">Get Tickets</button>
+            <button class="hero-button" src="tickets.html">Get Tickets</button>
 
         </main>
     </div>
 
     <div id="footerWrapper">
         <footer>
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <div class="brand-row">
-        <div class="brand-mark"></div>
-        <h3>Wolverine Wishes</h3>
-      </div>
-      <p>UVU students raising funds for Make-A-Wish Utah to help grant life-changing wishes for kids across the state.</p>
+            <div class="footer-inner">
+            <div class="footer-brand">
+            <div class="brand-row">
+            <div class="brand-mark"></div>
+            <img src="images/logo.webp" alt="Wolverine Wishes logo" class="brand-logo">
+            <h3>Wolverine Wishes</h3>
+            </div>
+            <p>UVU students raising funds for Make-A-Wish Utah to help grant life-changing wishes for kids across the state.</p>
     </div>
 
     <div class="footer-links">
       <h4>Explore</h4>
-      <a href="#">About</a>
-      <a href="#">Pageant</a>
-      <a href="#">Donate</a>
-      <a href="#">Make a Wish</a>
+      <a href="about.html">About</a>
+      <a href="pageant.html">Pageant</a>
+      <a href="donation.html">Donate</a>
+      <a href="make-a-wish.html">Make a Wish</a>
     </div>
 
     <div class="footer-contact">
-      <h4>Connect</h4>
-      <a href="#">@wolverinewishes</a>
-      <a href="#">club email goes here</a>
-      <a href="#" class="donate-button">Donate</a>
+        <h4>Connect</h4>
+        <a href="https://www.instagram.com/wolverinewishes">@wolverinewishes</a>
+        <a href="mailto:wolverinewishes@gmail.com">club email goes here</a>
+        <a href="donation.html" class="donate-button">Donate</a>
+        </div>
     </div>
-  </div>
 
-  <hr class="footer-divider" />
+    <hr class="footer-divider" />
 
-  <div class="footer-bottom">
-    <span>A Utah Valley University student club • In partnership with Make-A-Wish Utah</span>
-    <span>© 2026 Wolverine Wishes</span>
-  </div>
-</footer>
+    <div class="footer-bottom">
+        <span>A Utah Valley University student club • In partnership with Make-A-Wish Utah</span>
+        <span>© 2026 Wolverine Wishes</span>
     </div>
+    </footer>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="js/script.js" type="module"></script>  
 </body>
