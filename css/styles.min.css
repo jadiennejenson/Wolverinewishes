@@ -74,7 +74,8 @@
   transition: all .3s ease;
 }
 
-#navWrapper a:hover {
+#navWrapper a:hover,
+#navWrapper a.active {
   background-color: #007bff;
   color: #fff;
 }
