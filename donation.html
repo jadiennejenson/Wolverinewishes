@@ -4,103 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wolverine Wishes</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/styles.min.css"> <!-- Updated to link styles.min.css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/site.webmanifest">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="headerWrapper">
-        <header class="site-header">
-            <div class="brand">
-                <img src="images/logo.webp" alt="Wolverine Wishes logo" class="brand-logo">
-                <span>Wolverine Wishes</span>
-            </div>
-
-            <nav id="navWrapper" aria-label="Main navigation">
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="pageants.html">Pageants</a></li>
-                    <li><a href="donation.html">Donation</a></li>
-                    <li><a href ="makeawish.html">Make-A-Wish</a></li>
-                </ul>
-            </nav>
-        </header>
-
-    </div>
+  <div class="page-shell">
+    <header class="topbar">
+      <nav class="nav">
+        <img src="images/logo.webp" alt="Wolverine Wishes logo" class="brand-logo">
+        <div class="brand">Wolverine Wishes</div>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="pageants.html">Pageant</a></li>
+          <li><a href="donation.html">Donate</a></li>
+          <li><a href="makeawish.html">Make a Wish</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
-        <section class="donation-card">
-            <div class="donation-hero">
-                <h2>Help Make A wish</h2>
-                <p>The Wish Pageant is the heart of Wolverine Wishes' annual fundraiser in partnership with Make-A-Wish Utah. 
-                    This inclusive, co-ed competition invites full-time UVU students to showcase their talents, creativity, and compassion—all while raising funds to grant life-changing wishes for Utah children facing critical illnesses. </p>
-                <buttoin class="btn btn-primary">Donate</button>
-            </div>
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>Wolverine Wishes</h1>
+          <p>Bringing the UVU community together to make wishes come true.</p>
+          <div class="actions">
+            <a class="btn primary" href="donation.html">Donate</a>
+            <a class="btn secondary" href="apply.html">Get Involved</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="images/wish pagents.webp" alt="pagents" />
+        </div>
+      </section>
 
-            <div class="donation-body">
-                <div class="donation-actions">
-                    <button class="btn btn-secondary">Become a Sponsor</button>
-                </div>
+      <section class="stats-bar">
+        <div class="stat"><strong>$18,500</strong><span>Lifetime Total Raised</span></div>
+        <div class="stat"><strong>$13,000</strong><span>Most Raised at one time</span></div>
+        <div class="stat"><strong>Top 5</strong><span>Student WishMakers — 2026</span></div>
+      </section>
 
-                <div class="benefits">
-                    <article class="benefit">
-                        <h3>Make an Impact</h3>
-                        <p>Your support helps fund local wish experiences and meaningful community events.</p>
-                    </article>
+      <section class="content intro">
+        <h2>What is the Wolverine Wishes Fundraiser?</h2>
+        <p>Each spring, Wolverine Wishes brings the UVU community together for a campus-wide fundraiser supporting Make-A-Wish Utah.
+            Through events like the Wish Pageant, students raise money to help make wishes come true.
+            While we highlight one Wish Kid each year, all funds, support the general wish fund, bring hope and joy to children across Utah.
+        </p>
+      </section>
 
-                    <article class="benefit">
-                        <h3>Build Hope</h3>
-                        <p>Each donation gives families encouragement and a renewed sense of possibility.</p>
-                    </article>
+      <section class="three-up">
+        <article class="card">While Wolverine Wishes celebrates a specific Wish Kid each year, funds raised support the general wish grant fund - meaning your donation helps bring joy and hope to kids all across Utah.</article>
+        <article class="card">Apply to the Wish Pageant to showcase your talents, meet new people, and make a difference in the lives of Utah children.
+            Be part of something meaningful while creating memories that last!
+        </article>
+        <article class="card">Your ticket helps make wishes come true!
+            Join us for the Wish Pageant and support children facing critical illnesses.
+            All funds raised go towards Make-A-Wish Utah's General Wish Granting Fund.
+            Thank you for making a difference!
+        </article>
+      </section>
 
-                    <article class="benefit">
-                        <h3>Strengthen Community</h3>
-                        <p>When we give together, we create a lasting difference that reaches far beyond a single moment.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
+      <section class="split-section">
+        <div class="split-image"><img src="..." alt="" /></div>
+        <div class="split-copy">
+          <small>ABOUT US</small>
+          <h3>UVU students granting wishes across Utah</h3>
+          <p>...</p>
+          <a class="text-link" href="about.html">Read our story</a>
+        </div>
+      </section>
     </main>
 
-        <div id="footerWrapper">
-        <footer>
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <div class="brand-row">
-        <div class="brand-mark"></div>
-        <h3>Wolverine Wishes</h3>
-      </div>
-      <p>UVU students raising funds for Make-A-Wish Utah to help grant life-changing wishes for kids across the state.</p>
-    </div>
-
-    <div class="footer-links">
-      <h4>Explore</h4>
-      <a href="#">About</a>
-      <a href="#">Pageant</a>
-      <a href="#">Donate</a>
-      <a href="#">Make a Wish</a>
-    </div>
-
-    <div class="footer-contact">
-      <h4>Connect</h4>
-      <a href="#">@wolverinewishes</a>
-      <a href="#">club email goes here</a>
-      <a href="#" class="donate-button">Donate</a>
-    </div>
+    <footer class="site-footer">
+      <div class="footer-brand">Wolverine Wishes</div>
+      <p>Granting wishes for children in our community.</p>
+      <nav class="footer-nav">...</nav>
+      <a class="btn primary" href="donation.html">Donate</a>
+    </footer>
   </div>
-
-  <hr class="footer-divider" />
-
-  <div class="footer-bottom">
-    <span>A Utah Valley University student club • In partnership with Make-A-Wish Utah</span>
-    <span>© 2026 Wolverine Wishes</span>
-  </div>
-</footer>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="js/script.js" type="module"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="js/script.js" type="module"></script>  
 </body>
 </html>
