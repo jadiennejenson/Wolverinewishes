@@ -15,13 +15,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <div class="page-shell">
     <header class="topbar">
-      <nav class="nav">
-        <img src="images/logo.webp" alt="Wolverine Wishes logo" class="brand-logo">
-        <div class="brand">Wolverine Wishes</div>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="brand-link" aria-label="Wolverine Wishes home">
+          <img src="images/logo.webp" alt="Wolverine Wishes logo" class="brand-logo">
+          <span class="brand">Wolverine Wishes</span>
+        </a>
+
         <ul>
           <li><a href="index.html">About</a></li>
           <li><a href="pageants.html">Pageant</a></li>
@@ -37,8 +41,8 @@
           <h1>Wolverine Wishes</h1>
           <p>Bringing the UVU community together to make wishes come true.</p>
           <div class="actions">
-            <button><a class="btn primary" href="donation.html">Donate</a></button>
-            <button><a class="btn secondary" href="apply.html">Get Involved</a></button>
+            <a class="btn primary" href="donation.html">Donate</a>
+            <a class="btn secondary" href="apply.html">Get Involved</a>
           </div>
         </div>
         <div class="hero-image">
@@ -54,6 +58,7 @@
 
       <section class="content intro">
         <h2>What is the Wolverine Wishes Fundraiser?</h2>
+        
         <p>Each spring, Wolverine Wishes brings the UVU community together for a campus-wide fundraiser supporting Make-A-Wish Utah.
             Through events like the Wish Pageant, students raise money to help make wishes come true.
             While we highlight one Wish Kid each year, all funds, support the general wish fund, bring hope and joy to children across Utah.
@@ -84,9 +89,21 @@
     </main>
 
     <footer class="site-footer">
+      <img src="images/logo.webp" alt="Wolverine Wishes logo" class="footer-logo">
       <div class="footer-brand">Wolverine Wishes</div>
       <p>Granting wishes for children in our community.</p>
-      <nav class="footer-nav">...</nav>
+
+      <a href="https://www.instagram.com/wolverinewishes/" target="_blank" rel="noopener noreferrer">Instagram</a>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="pageants.html">Pageant</a></li>
+          <li><a href="donation.html">Donate</a></li>
+          <li><a href="makeawish.html">Make a Wish</a></li>
+        </ul>
+      </nav>
+
       <a class="btn primary" href="donation.html">Donate</a>
     </footer>
   </div>
