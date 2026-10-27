@@ -74,21 +74,52 @@
       border-radius: 50%;
     }
 
-    .nav{
-      display:flex;
-      gap:26px;
-      font-size: 12px;
-      color: var(--muted);
-      align-items:center;
+        .nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 18px 28px;
+      background: #f7f4ee;
+      border-bottom: 1px solid #dfe2dc;
     }
-    .nav a{
-      text-decoration:none;
-      color: inherit;
+
+    .logo img,
+    .site-logo img,
+    header img {
+      width: 50px;
+      max-width: 100%;
+    height: auto;
+    display: circle;
     }
-    .nav a.active{
-      color: var(--text);
-      font-weight: 600;
+    .nav ul {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
     }
+
+.nav li a {
+  text-decoration: none;
+  color: #1d2b2f;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  }
+
+.nav li a:hover {
+  color: #3f5b63;
+  }
+
+.nav footer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  text-decoration: none;
+}
 
     .hero{
       display:grid;
@@ -364,7 +395,7 @@
           </p>
 
           <div class="actions">
-            <button class="btn primary">Buy Tickets</button>
+            <button class="btn primary" href="tickets.html">Buy Tickets</button>
             <button class="btn secondary">See Details</button>
           </div>
         </div>
