@@ -119,7 +119,6 @@
         margin: 0 0 18px;
         font-size: clamp(3rem, 6vw, 5rem);
         line-height: 0.9;
-        letter-spacing: -0.08em;
         font-weight: 800;
       }
 
@@ -147,6 +146,23 @@
         border-radius: 999px;
         font-weight: 700;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      small {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 0.5rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 800;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+        margin: 0 0 16px;
+        line-height: 1.06;
+        color: var(--white);
       }
 
       .btn:hover {
@@ -185,7 +201,7 @@
         grid-template-columns: repeat(3, minmax(180px, 1fr));
         gap: 26px;
         padding: 28px 52px 20px;
-        background: var(--navy);
+        background: var(--white);
       }
 
       .stat {
@@ -203,7 +219,7 @@
       }
 
       .stat span {
-        color: rgba(255, 255, 255, 0.8);
+        color: var(--muted);
         font-size: 0.82rem;
         line-height: 1.5;
       }
@@ -500,7 +516,10 @@
         </section>
 
         <section class="three-up">
-          <h2>Help make a wish come true</h2>
+          <div>
+            <small>GET INVOLVED</small>
+            <h2>Help make a wish come true</h2>
+          </div>
           <article class="card">
             <img class="card-image" src="images/Header-Image-OUAWP-Disney2-1024x683.jpg" alt="Wish Kid" />
             <p>
