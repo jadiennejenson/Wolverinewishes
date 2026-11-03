@@ -1,381 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ticket Page</title>
-  <style>
-    :root{
-      --bg: #f2f0ea;
-      --panel: #f5f3ef;
-      --card: #f7f5f2;
-      --border: #dfe0db;
-      --text: #1f2d3d;
-      --muted: #657084;
-      --button: #1d2c3d;
-      --blue-soft: #dfeaf7;
-      --blue: #b9d4ee;
-      --shadow: 0 8px 18px rgba(35, 45, 58, 0.06);
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolverine Wishes</title>
+    <link rel="stylesheet" href="css/styles.min.css"> <!-- Updated to link styles.min.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/site.webmanifest">
 
-    * { box-sizing: border-box; }
-    body{
-      margin:0;
-      background: var(--bg);
-      font-family: "Segoe UI", Arial, sans-serif;
-      color: var(--text);
-    }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
 
-    .page{
-      max-width: 980px;
-      margin: 32px auto;
-      background: rgba(255,255,255,0.1);
-      padding: 18px 0 0;
-    }
-
-    .shell{
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: var(--shadow);
-    }
-
-    .topbar{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 24px 14px;
-      background: rgba(255,255,255,0.18);
-      border-bottom: 1px solid rgba(110, 118, 130, 0.15);
-    }
-
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      font-size: 14px;
-      font-weight: 600;
-    }
-
-    .logo{
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #1f2d3d, #b7d0e6);
-      position: relative;
-      display:inline-block;
-    }
-    .logo::before{
-      content:"";
-      position:absolute;
-      inset: 5px;
-      background: rgba(255,255,255,0.7);
-      border-radius: 50%;
-    }
-
-        .nav{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      padding: 18px 28px;
-      background: #f7f4ee;
-      border-bottom: 1px solid #dfe2dc;
-    }
-
-    .logo img,
-    .site-logo img,
-    header img {
-      width: 50px;
-      max-width: 100%;
-    height: auto;
-    display: circle;
-    }
-    .nav ul {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-.nav li a {
-  text-decoration: none;
-  color: #1d2b2f;
-  font-size: 0.82rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  }
-
-.nav li a:hover {
-  color: #3f5b63;
-  }
-
-.nav footer {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  text-decoration: none;
-}
-
-    .hero{
-      display:grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap: 28px;
-      padding: 34px 28px 18px;
-      background: #f0efe9;
-      border-bottom: 1px solid rgba(110, 118, 130, 0.15);
-    }
-
-    .eyebrow{
-      font-size: 10px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 16px;
-    }
-
-    h1{
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(2.1rem, 4vw, 4rem);
-      line-height: 0.95;
-      letter-spacing: -0.05em;
-      font-weight: 600;
-      max-width: 500px;
-    }
-
-    .sub{
-      margin-top: 16px;
-      color: var(--muted);
-      font-size: 15px;
-      line-height: 1.6;
-      max-width: 420px;
-    }
-
-    .actions{
-      display:flex;
-      gap:12px;
-      margin-top: 20px;
-    }
-
-    .btn{
-      border: none;
-      border-radius: 999px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: 0.2s ease;
-    }
-
-    .btn.primary{
-      background: var(--button);
-      color: white;
-      padding: 12px 20px;
-      box-shadow: var(--shadow);
-    }
-
-    .btn.secondary{
-      background: var(--blue-soft);
-      color: var(--text);
-      padding: 12px 18px;
-    }
-
-    .ticket-visual{
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      background: linear-gradient(135deg, #f8f5f1, #e7e1d7);
-      min-height: 250px;
-      position: relative;
-      overflow: hidden;
-      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.25);
-    }
-
-    .ticket-visual::before{
-      content:"";
-      position:absolute;
-      inset: 18px 28px 18px 18px;
-      border-radius: 18px;
-      background: rgba(255,255,255,0.18);
-      border: 1px solid rgba(114,127,144,0.18);
-    }
-
-    .ticket-visual::after{
-      content:"";
-      position:absolute;
-      width: 180px;
-      height: 180px;
-      right: -20px;
-      top: -20px;
-      background: rgba(174, 203, 231, 0.6);
-      border-radius: 50%;
-    }
-
-    .content{
-      padding: 24px 28px 30px;
-    }
-
-    .mini-label{
-      font-size: 10px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 12px;
-    }
-
-    .info-grid{
-      display:grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-      margin-top: 18px;
-    }
-
-    .info-card{
-      background: rgba(255,255,255,0.16);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 18px 16px;
-      min-height: 150px;
-    }
-
-    .info-card h3{
-      margin: 0 0 10px;
-      font-size: 15px;
-      font-weight: 600;
-    }
-
-    .info-card ul{
-      margin: 0;
-      padding-left: 18px;
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.7;
-    }
-
-    .faq-layout{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 28px;
-      margin-top: 26px;
-      align-items:start;
-    }
-
-    .faq-box{
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      background: rgba(255,255,255,0.12);
-      overflow:hidden;
-    }
-
-    .faq-item{
-      border-bottom: 1px solid var(--border);
-      padding: 16px 18px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap: 12px;
-      font-size: 14px;
-    }
-
-    .faq-item:last-child{
-      border-bottom: none;
-    }
-
-    .faq-item strong{
-      font-weight: 600;
-    }
-
-    .faq-item .plus{
-      color: var(--muted);
-      font-size: 22px;
-      line-height: 1;
-    }
-
-    .cta{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:18px;
-      margin-top: 30px;
-      padding: 20px 22px;
-      background: rgba(189, 212, 233, 0.45);
-      border: 1px solid rgba(145, 179, 212, 0.65);
-      border-radius: 18px;
-    }
-
-    .cta h2{
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(1.8rem, 2vw, 2.5rem);
-      letter-spacing: -0.045em;
-      font-weight: 600;
-    }
-
-    .footer{
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      justify-content:center;
-      padding: 26px 0 22px;
-      text-align:center;
-      color: var(--muted);
-      font-size: 12px;
-    }
-
-    .footer-brand{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      font-size: 13px;
-      color: var(--text);
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-
-    .footer nav{
-      display:flex;
-      gap:18px;
-      margin: 6px 0 10px;
-      flex-wrap: wrap;
-      justify-content:center;
-    }
-
-    @media (max-width: 760px){
-      .breakdown-title {
-        margin: 0;
-        font-family: Georgia, serif;
-        font-size: 2rem;
-        letter-spacing: -0.04em;
-      }
-      .hero, .faq-layout, .info-grid{
-        grid-template-columns: 1fr;
-      }
-      .nav{
-        display:none;
-      }
-      .cta{
-        flex-direction:column;
-        align-items:flex-start;
-      }
-    }
-  </style>
+    
 </head>
 <body>
-  <div class="page">
-    <div class="shell">
-      <header class="topbar">
-        <div class="brand">
-          <span class="logo"></span>
-          <span>Wolverine Wishes</span>
-        </div>
-
-        <nav class="nav">
+  <div class="page-shell">
+    <header class="topbar">
+      <nav class="nav" aria-label="Main navigation">
         <a href="index.html" class="brand-link" aria-label="Wolverine Wishes home">
           <img src="images/logo.webp" alt="Wolverine Wishes logo" class="brand-logo">
           <span class="brand">Wolverine Wishes</span>
         </a>
+
         <ul>
           <li><a href="index.html">About</a></li>
           <li><a href="pageants.html">Pageant</a></li>
@@ -383,100 +34,82 @@
           <li><a href="makeawish.html">Make a Wish</a></li>
         </ul>
       </nav>
-      </header>
+    </header>
 
+    <main>
       <section class="hero">
-        <div>
-          <div class="eyebrow">Tickets</div>
-          <h1>Get your tickets to the Wish Pageant</h1>
-          <p class="sub">
-            Special event bringing together our community to celebrate
-            generosity, courage, and joyful stories.
-          </p>
-
+        <div class="hero-copy">
+          <h1>Wolverine Wishes</h1>
+          <p>Bringing the UVU community together to make wishes come true.</p>
           <div class="actions">
-            <button class="btn primary" href="tickets.html">Buy Tickets</button>
-            <button class="btn secondary">See Details</button>
+            <a class="btn primary" href="donation.html">Donate</a>
+            <a class="btn secondary" href="apply.html">Get Involved</a>
           </div>
         </div>
-
-        <div class="ticket-visual"></div>
+        <div class="hero-image">
+          <img src="images/wish pagents.webp" alt="pagents" />
+        </div>
       </section>
 
-      <div class="content">
-        <div class="mini-label">About the event</div>
-        <h2 class="breakdown-title">Here's the breakdown</h2>
+      <section class="stats-bar">
+        <div class="stat"><strong>$18,500</strong><span>Lifetime Total Raised</span></div>
+        <div class="stat"><strong>$13,000</strong><span>Most Raised at one time</span></div>
+        <div class="stat"><strong>Top 5</strong><span>Student WishMakers — 2026</span></div>
+      </section>
 
-        <div class="info-grid">
-          <div class="info-card">
-            <h3>How it works</h3>
-            <ul>
-              <li>Reserve your seat</li>
-              <li>Check in at the door</li>
-              <li>Enjoy the program</li>
-            </ul>
-          </div>
+      <section class="content intro">
+        <h2>What is the Wolverine Wishes Fundraiser?</h2>
+        
+        <p>Each spring, Wolverine Wishes brings the UVU community together for a campus-wide fundraiser supporting Make-A-Wish Utah.
+            Through events like the Wish Pageant, students raise money to help make wishes come true.
+            While we highlight one Wish Kid each year, all funds, support the general wish fund, bring hope and joy to children across Utah.
+        </p>
+      </section>
 
-          <div class="info-card">
-            <h3>Schedule</h3>
-            <ul>
-              <li>Doors open at 6:00 PM</li>
-              <li>Program starts at 7:00 PM</li>
-              <li>Reception follows</li>
-            </ul>
-          </div>
+      <section class="three-up">
+        <div></div>
+        <article class="card">While Wolverine Wishes celebrates a specific Wish Kid each year, funds raised support the general wish grant fund - meaning your donation helps bring joy and hope to kids all across Utah.</article>
+        <article class="card">Apply to the Wish Pageant to showcase your talents, meet new people, and make a difference in the lives of Utah children.
+            Be part of something meaningful while creating memories that last!
+        </article>
+        <article class="card">Your ticket helps make wishes come true!
+            Join us for the Wish Pageant and support children facing critical illnesses.
+            All funds raised go towards Make-A-Wish Utah's General Wish Granting Fund.
+            Thank you for making a difference!
+        </article>
+      </section>
 
-          <div class="info-card">
-            <h3>Important notes</h3>
-            <ul>
-              <li>Tickets are limited</li>
-              <li>All are welcome</li>
-              <li>Accessibility support available</li>
-            </ul>
-          </div>
+      <section class="split-section">
+        <div class="split-image"><img src="images/Hannah-Make-a-Wish-flowers-550x310.jpg" alt="" /></div>
+        <div class="split-copy">
+          <small>ABOUT US</small>
+          <h3>UVU students granting wishes across Utah</h3>
+          <p>Learn more about our mission and the impact we make in the lives of children across Utah.</p>
+          <a class="text-link" href="about.html">Read our story</a>
         </div>
+      </section>
+    </main>
 
-        <div class="faq-layout">
-          <div class="faq-box">
-            <div class="faq-item"><strong>Questions, answered</strong><span class="plus">+</span></div>
-            <div class="faq-item"><span>Who can attend?</span><span class="plus">+</span></div>
-            <div class="faq-item"><span>Are tickets refundable?</span><span class="plus">+</span></div>
-            <div class="faq-item"><span>Is it open to the public?</span><span class="plus">+</span></div>
-            <div class="faq-item"><span>Can I bring a guest?</span><span class="plus">+</span></div>
-          </div>
+    <footer class="site-footer">
+      <img src="images/logo.webp" alt="Wolverine Wishes logo" class="footer-logo">
+      <div class="footer-brand">Wolverine Wishes</div>
+      <p>Granting wishes for children in our community.</p>
 
-          <div class="faq-box">
-            <div class="faq-item"><span>Where and when is the event?</span><span class="plus">+</span></div>
-            <div class="faq-item"><span>How do I purchase tickets?</span><span class="plus">+</span></div>
-            <div class="faq-item"><span>What if I need assistance?</span><span class="plus">+</span></div>
-            <div class="faq-item"><span>Is parking available?</span><span class="plus">+</span></div>
-            <div class="faq-item"><span>What should I wear?</span><span class="plus">+</span></div>
-          </div>
-        </div>
+      <a href="https://www.instagram.com/wolverinewishes/" target="_blank" rel="noopener noreferrer">Instagram</a>
 
-        <div class="cta">
-          <h2>Ready to join us?</h2>
-          <button class="btn primary">Get tickets</button>
-        </div>
-      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="pageants.html">Pageant</a></li>
+          <li><a href="donation.html">Donate</a></li>
+          <li><a href="makeawish.html">Make a Wish</a></li>
+        </ul>
+      </nav>
 
-      <footer class="footer">
-        <div class="footer-brand">
-          <span class="logo"></span>
-          <span>Wolverine Wishes</span>
-        </div>
-        <div>Making wishes come true for our community.</div>
-        <nav>
-          <span>About</span>
-          <span>Programs</span>
-          <span>Dreams</span>
-          <span>FAQ</span>
-          <span>Contact</span>
-        </nav>
-      </footer>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-      <script src="js/script.js" type="module"></script>  
-    </div>
+      <a class="btn primary" href="donation.html">Donate</a>
+    </footer>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="js/script.js" type="module"></script>  
 </body>
 </html>

@@ -1,5 +1,5 @@
 :root {
-  --bg: #FFF6D1;
+  --bg: #0066ff;
   --panel: #edf3f6;
   --card: #F1EAD3;
   --ink: #243b4a;
@@ -13,7 +13,7 @@
 
 body {
   margin: 0;
-  background: var(--bg);
+  background: var(--panel);
   color: var(--ink);
   font-family: "inter", "Inter", sans-serif;
 }
