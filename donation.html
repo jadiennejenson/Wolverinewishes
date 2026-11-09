@@ -369,6 +369,205 @@
       box-shadow: 0 14px 22px rgba(28, 125, 227, 0.18);
     }
 
+    .donation-page {
+      padding: 28px 42px 56px;
+      background: #eef4f8;
+    }
+
+    .donation-hero {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      align-items: stretch;
+      background: #f7f7f4;
+      border: 1px solid rgba(90, 74, 165, 0.2);
+      box-shadow: 0 14px 30px rgba(17, 38, 70, 0.06);
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+
+    .donation-copy {
+      padding: 30px 34px 32px 34px;
+      background: #f5f5f3;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-right: 1px solid rgba(90, 74, 165, 0.18);
+    }
+
+    .donation-copy .eyebrow {
+      display: inline-block;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: #7a5ab7;
+      margin-bottom: 18px;
+    }
+
+    .donation-copy h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2.2rem, 3vw, 3.2rem);
+      line-height: 1.03;
+      letter-spacing: -0.06em;
+      color: #1d3658;
+    }
+
+    .donation-copy p {
+      margin: 0 0 22px;
+      max-width: 540px;
+      color: #4d647f;
+      font-size: 1.08rem;
+      line-height: 1.7;
+    }
+
+    .donation-copy .btn.primary {
+      width: fit-content;
+      background: #8b64c7;
+      color: #fff;
+      border: 1px solid rgba(90, 74, 165, 0.12);
+      box-shadow: 0 12px 18px rgba(139, 100, 199, 0.18);
+    }
+
+    .donation-image {
+      position: relative;
+      min-height: 340px;
+      background: #dfeaf5;
+      border: 4px solid #8b64c7;
+      border-left: none;
+    }
+
+    .donation-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .impact-head {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 28px;
+      align-items: flex-start;
+      padding-top: 16px;
+      padding-bottom: 24px;
+      border-top: 1px solid rgba(13, 60, 114, 0.18);
+    }
+
+    .impact-head .title {
+      font-size: clamp(2.2rem, 3vw, 3.1rem);
+      line-height: 1.05;
+      letter-spacing: -0.06em;
+      color: #173d64;
+      margin: 0;
+      max-width: 420px;
+    }
+
+    .impact-head .copy {
+      margin: 0;
+      max-width: 760px;
+      color: #536f90;
+      font-size: 1.04rem;
+      line-height: 1.8;
+    }
+
+    .impact-list {
+      display: grid;
+      gap: 34px;
+      margin-top: 8px;
+    }
+
+    .impact-item {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 26px;
+      align-items: center;
+    }
+
+    .impact-item.reverse {
+      grid-template-columns: 1.2fr 1fr;
+    }
+
+    .impact-item .visual {
+      min-height: 220px;
+      background: #dfeaf5;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 12px 24px rgba(17, 38, 70, 0.08);
+    }
+
+    .impact-item .visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .impact-item .meta {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .impact-item .number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #7a5ab7;
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.1rem;
+    }
+
+    .impact-item h3 {
+      margin: 0 0 8px;
+      font-size: clamp(1.8rem, 2vw, 2.4rem);
+      line-height: 1.12;
+      letter-spacing: -0.05em;
+      color: #183d64;
+    }
+
+    .impact-item p {
+      margin: 0;
+      color: #536f90;
+      font-size: 1.02rem;
+      line-height: 1.7;
+    }
+
+    .bottom-banner {
+      margin-top: 38px;
+      background: #ece5c7;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 26px 28px;
+      box-shadow: 0 10px 20px rgba(17, 38, 70, 0.04);
+    }
+
+    .bottom-banner h2 {
+      margin: 0;
+      font-size: clamp(2rem, 2.5vw, 3rem);
+      line-height: 1.08;
+      letter-spacing: -0.05em;
+      color: #183d64;
+    }
+
+    .bottom-banner p {
+      margin: 10px 0 0;
+      color: #4d647f;
+      font-size: 0.98rem;
+    }
+
+    .bottom-banner .btn.primary {
+      background: #173d64;
+      color: #fff;
+      box-shadow: 0 12px 20px rgba(23, 61, 100, 0.18);
+    }
+
     @media (max-width: 980px) {
       .hero {
         grid-template-columns: 1fr;
@@ -384,6 +583,29 @@
 
       .split-copy .text-wrap {
         padding: 12px 24px 24px;
+      }
+
+      .donation-hero,
+      .impact-head,
+      .impact-item,
+      .impact-item.reverse,
+      .bottom-banner {
+        grid-template-columns: 1fr;
+        display: grid;
+      }
+
+      .donation-copy {
+        border-right: none;
+        border-bottom: 1px solid rgba(90, 74, 165, 0.18);
+      }
+
+      .donation-image {
+        border-left: 4px solid #8b64c7;
+        border-top: none;
+      }
+
+      .bottom-banner {
+        justify-content: flex-start;
       }
     }
 
@@ -439,58 +661,76 @@
     </header>
 
     <main>
-      <section class="hero">
-        <div class="hero-copy">
-          <small>DONATE</small>
-          <br><br><br>
-          <h1>Help Make a Wish </h1>
-          <p>Every gift goes to Make-A-Wish Utah's General Wish Granting Fund, helping grant wishes for children facing critical illnesses across Utah.</p>
-          <div class="actions">
-            <a class="btn primary" href="donation.html">Donate</a>
+      <section class="donation-page">
+        <div class="donation-hero">
+          <div class="donation-copy">
+            <div class="eyebrow">Donate</div>
+            <h1>Help Make a Wish</h1>
+            <p>Every gift goes to Make-A-Wish Utah's General Wish Granting Fund, helping grant wishes for children facing critical illnesses across Utah.</p>
+            <a class="btn primary" href="donation.html">Donate Now</a>
+          </div>
+
+          <div class="donation-image">
+            <img src="images/wish pagents.webp" alt="Wish pageant participants" />
           </div>
         </div>
-        <div class="hero-image">
-          <img src="images/wish pagents.webp" alt="pagents" />
+
+        <div class="impact-head">
+          <h2 class="title">What your donation helps with</h2>
+          <p class="copy">The Wish Pageant is the heart of Wolverine Wishes' annual fundraiser in partnership with Make-A-Wish Utah. This inclusive, co-ed competition invites full-time UVU students to showcase their talents, creativity, and compassion — all while raising funds to grant life-changing wishes for Utah children facing critical illnesses.</p>
         </div>
-      </section>
 
-      <section class="content intro">
-        <small>YOUR IMPACT</small>
-        <br><br><br>
-        <h2>What your donation helps with </h2>
-        
-        <p>The Wish Pageant is the heart of Wolverine Wishes' annual fundraiser in partnership with Make-A-Wish Utah. 
-          This inclusive, co-ed competition invites full-time UVU students to showcase their talents, creativity, and compassion — all while raising funds to grant life-changing wishes for Utah children facing critical illnesses.
-        </p>
-      </section>
+        <div class="impact-list">
+          <div class="impact-item">
+            <div class="visual">
+              <img src="images/Hannah-Make-a-Wish-flowers-550x310.jpg" alt="Wish flowers and support" />
+            </div>
 
-      <section class="three-up">
-        <div></div>
-        <article class="card">While Wolverine Wishes celebrates a specific Wish Kid each year, funds raised support the general wish grant fund - meaning your donation helps bring joy and hope to kids all across Utah.</article>
-        <article class="card">Apply to the Wish Pageant to showcase your talents, meet new people, and make a difference in the lives of Utah children.
-            Be part of something meaningful while creating memories that last!
-        </article>
-        <article class="card">Your ticket helps make wishes come true!
-            Join us for the Wish Pageant and support children facing critical illnesses.
-            All funds raised go towards Make-A-Wish Utah's General Wish Granting Fund.
-            Thank you for making a difference!
-        </article>
-      </section>
+            <div class="meta">
+              <div class="number">1</div>
+              <div>
+                <h3>Funding real wishes</h3>
+                <p>Your gift goes straight to Make-A-Wish Utah's General Wish Granting Fund, which grants wishes for kids facing critical illnesses all across the state.</p>
+              </div>
+            </div>
+          </div>
 
-      <section class="split-section">
-        <div class="split-image"><img src="images/Hannah-Make-a-Wish-flowers-550x310.jpg" alt="" /></div>
-        <div class="split-copy">
-          <small>ABOUT US</small>
-          <h3>UVU students granting wishes across Utah</h3>
-          <p>Learn more about our mission and the impact we make in the lives of children across Utah.</p>
-          <a class="text-link" href="about.html">Read our story</a>
+          <div class="impact-item reverse">
+            <div class="meta">
+              <div class="number">2</div>
+              <div>
+                <h3>Giving kids something to look forward to</h3>
+                <p>A wish can bring hope, strength, and joy to a child and their family during one of the hardest times of their lives.</p>
+              </div>
+            </div>
+
+            <div class="visual">
+              <img src="images/IMG_2869.jpeg" alt="Wish community event" />
+            </div>
+          </div>
+
+          <div class="impact-item">
+            <div class="visual">
+              <img src="images/IMG_3741.jpg" alt="Wish pageant group photo" />
+            </div>
+
+            <div class="meta">
+              <div class="number">3</div>
+              <div>
+                <h3>Supporting every Wish Kid</h3>
+                <p>While Wolverine Wishes celebrates a specific Wish Kid each year, funds raised support the general wish grant fund — meaning your donation helps bring joy and hope to kids all across Utah.</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
-      <section>
-        <h2>THANK YOU! To everyone who gives</h2>
-        <p>Thank you to every donor, sponsor, volunteer, and contestant who makes Wish Week possible. 
-        Your generosity turns a student fundraiser into real wishes for kids and families in Utah.</p>
-        <p>Whether you give five dollars or five hundred, share our page, or cheer from the audience on pageant night, you are part of granting a wish.</p>
+
+        <div class="bottom-banner">
+          <div>
+            <h2>Every gift brings a child closer to their wish.</h2>
+            <p>All funds go to Make-A-Wish Utah's General Wish Granting Fund.</p>
+          </div>
+          <a class="btn primary" href="donation.html">Donate Now</a>
+        </div>
       </section>
     </main>
 
