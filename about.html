@@ -122,6 +122,7 @@
       font-size: clamp(3rem, 6vw, 5rem);
       line-height: 0.9;
       font-weight: 800;
+      letter-spacing: -0.04em;
     }
 
     .hero-copy p {
@@ -368,6 +369,394 @@
       box-shadow: 0 14px 22px rgba(28, 125, 227, 0.18);
     }
 
+    .about-hero {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      background: var(--navy);
+      min-height: 520px;
+      align-items: center;
+      padding: 0 22px 0 0;
+    }
+
+    .about-hero-copy {
+      padding: 44px 20px 32px 58px;
+    }
+
+    .about-hero-copy h1 {
+      margin: 0;
+      font-size: clamp(3rem, 4vw, 5.1rem);
+      line-height: 0.9;
+      letter-spacing: -0.07em;
+      color: white;
+    }
+
+    .about-hero-copy p {
+      margin: 18px 0 28px;
+      max-width: 480px;
+      color: white;
+      font-size: 1.06rem;
+      line-height: 1.7;
+    }
+
+    .about-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .about-hero .btn {
+      min-height: 42px;
+      padding: 0.7rem 1.2rem;
+      border-radius: 999px;
+      font-weight: 700;
+      border: 1px solid white;
+    }
+
+    .about-hero .btn.primary {
+      background: white;
+      color: var(--navy);
+    }
+
+    .about-hero .btn.secondary {
+      background: transparent;
+      color: white;
+    }
+
+    .about-hero-image {
+      min-height: 500px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .about-hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .story {
+      padding: 36px 58px 24px;
+      background: #f5f7fb;
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .story-kicker,
+    .journey-kicker,
+    .partnership-kicker {
+      display: inline-block;
+      margin-bottom: 14px;
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #2d74c9;
+      font-weight: 800;
+    }
+
+    .story-grid h2 {
+      margin: 0;
+      font-size: clamp(2.3rem, 3vw, 3.6rem);
+      line-height: 1.02;
+      letter-spacing: -0.06em;
+      color: var(--navy);
+    }
+
+    .story-copy {
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    .story-copy p {
+      margin: 0 0 18px;
+    }
+
+    .journey {
+      background: #102f54;
+      padding: 42px 58px 52px;
+      color: #fff;
+    }
+
+    .journey-header {
+      margin-bottom: 22px;
+    }
+
+    .journey-header h2 {
+      margin: 0;
+      font-size: clamp(2.3rem, 3vw, 3.5rem);
+      line-height: 1.08;
+      letter-spacing: -0.06em;
+      color: #fff;
+    }
+
+    .journey-header p {
+      margin: 14px 0 0;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 1.04rem;
+    }
+
+    .journey-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .journey-card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 18px;
+      padding: 18px 18px 16px;
+      color: var(--text);
+      box-shadow: 0 10px 24px rgba(10, 22, 36, 0.08);
+      min-height: 240px;
+    }
+
+    .journey-card .year {
+      display: inline-block;
+      margin-bottom: 10px;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #2d74c9;
+      font-weight: 800;
+    }
+
+    .journey-card h3 {
+      margin: 0 0 10px;
+      font-size: clamp(1.8rem, 2vw, 2.5rem);
+      line-height: 1.1;
+      letter-spacing: -0.05em;
+      color: var(--navy);
+    }
+
+    .journey-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 0.98rem;
+    }
+
+    .partnership {
+      background: #f2f2ef;
+      padding: 42px 58px 54px;
+    }
+
+    .partnership-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .partnership-photo {
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background: #dfeaf8;
+      min-height: 260px;
+    }
+
+    .partnership-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .partnership-copy h2 {
+      margin: 0 0 12px;
+      font-size: clamp(2.1rem, 3vw, 3.1rem);
+      line-height: 1.08;
+      letter-spacing: -0.06em;
+      color: var(--navy);
+    }
+
+    .partnership-copy p {
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 1.02rem;
+      line-height: 1.8;
+    }
+
+    .partnership-copy ul {
+      margin: 18px 0 12px;
+      padding-left: 20px;
+      color: var(--muted);
+      line-height: 1.9;
+    }
+
+    .learn-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0.7rem 1.1rem;
+      border-radius: 999px;
+      background: #e8dcae;
+      color: var(--navy);
+      font-weight: 700;
+      text-decoration: none;
+      margin-top: 8px;
+    }
+
+    .purpose-section {
+      padding: 46px 52px 32px;
+      background: #f7f7f3;
+    }
+
+    .purpose-header {
+      max-width: 1080px;
+      margin-bottom: 26px;
+    }
+
+    .purpose-kicker,
+    .cta-kicker {
+      display: inline-block;
+      margin-bottom: 12px;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #2d74c9;
+      font-weight: 800;
+    }
+
+    .purpose-header h2 {
+      margin: 0;
+      font-size: clamp(2.2rem, 3vw, 3.5rem);
+      line-height: 1.15;
+      letter-spacing: -0.06em;
+      color: var(--navy);
+      max-width: 1040px;
+    }
+
+    .purpose-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .value-card {
+      background: #163d69;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      min-height: 360px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .value-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .value-card .value-body {
+      padding: 18px 18px 20px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .value-number {
+      display: inline-block;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.74);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .value-card h3 {
+      margin: 0 0 8px;
+      font-size: clamp(1.8rem, 2vw, 2.3rem);
+      line-height: 1.14;
+      letter-spacing: -0.05em;
+      color: #fff;
+    }
+
+    .value-card p {
+      margin: 0;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.7;
+      font-size: 0.98rem;
+    }
+
+    .purpose-cta {
+      margin: 24px 52px 54px;
+      background: #efe4c6;
+      border-radius: 18px;
+      padding: 30px 28px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .purpose-cta h2 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 3vw, 3rem);
+      line-height: 1.08;
+      letter-spacing: -0.05em;
+      color: var(--navy);
+    }
+
+    .purpose-cta p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.7;
+      max-width: 600px;
+    }
+
+    .cta-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
+
+    .cta-actions .btn {
+      min-height: 42px;
+      padding: 0.7rem 1.2rem;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+
+    .cta-actions .btn.primary {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    .cta-actions .btn.secondary {
+      background: rgba(255,255,255,0.6);
+      color: var(--navy);
+      border: 1px solid rgba(13,60,114,0.15);
+    }
+
+    .purpose-cta-image {
+      border-radius: 18px;
+      overflow: hidden;
+      min-height: 220px;
+      box-shadow: var(--shadow);
+    }
+
+    .purpose-cta-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
     @media (max-width: 980px) {
       .hero {
         grid-template-columns: 1fr;
@@ -383,6 +772,36 @@
 
       .split-copy .text-wrap {
         padding: 12px 24px 24px;
+      }
+
+      .about-hero,
+      .story-grid,
+      .partnership-grid,
+      .journey-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-hero-copy {
+        padding: 40px 24px 20px;
+      }
+
+      .about-hero-image {
+        min-height: 320px;
+      }
+
+      .story,
+      .journey,
+      .partnership {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      .purpose-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .purpose-cta {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -415,6 +834,16 @@
       .three-up {
         grid-template-columns: 1fr;
       }
+
+      .purpose-section,
+      .purpose-cta {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      .purpose-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
     
@@ -438,62 +867,122 @@
     </header>
 
     <main>
-      <section class="hero">
-        <div class="hero-copy">
+      <section class="about-hero">
+        <div class="about-hero-copy">
           <h1>UVU students granting wishes across Utah</h1>
-          <p>UVU's Student WishMakers club, helping Make-A-Wish Utah grant life-changing wishes for kids with critical illnesses.</p>
-          <div class="actions">
+          <p>UVU's Student WishMakers club is helping Make-A-Wish Utah grant life-changing wishes for kids with critical illnesses.</p>
+          <div class="about-actions">
             <a class="btn primary" href="donation.html">Donate</a>
             <a class="btn secondary" href="apply.html">Get Involved</a>
           </div>
         </div>
-        <div class="hero-image">
-          <img src="images/wish pagents.webp" alt="pagents" />
+
+        <div class="about-hero-image">
+          <img src="images/kid 6.jpg" alt="Wish family and contestants" />
         </div>
       </section>
 
-      <section class="content intro">
-        <small>OUR STORY</small>
-        <h2>From a service project to a campus tradition</h2>
-        
-        <p>Wolverine Wishes started in 2024 as a service project within the Wolverine Ambassadors, UVU's student leadership program. 
-          After connecting with Make-A-Wish Utah, the team joined the Student WishMakers program, becoming one of the only college groups in Utah to take part.
-        </p>
+      <section class="story">
+        <div class="story-grid">
+          <div>
+            <span class="story-kicker">Our Story</span>
+            <h2>From a service project to a campus tradition</h2>
+          </div>
 
-        <p>When funding for the project was cut, the founders turned it into an official UVU club. 
-          Today, Wolverine Wishes is run by a student executive board and hosts the annual Wish Pageant, our biggest fundraiser of the year.
-        </p>
+          <div class="story-copy">
+            <p>Wolverine Wishes started in 2024 as a service project within the Wolverine Ambassadors, UVU’s student leadership program. After connecting with Make-A-Wish Utah, the team joined the Student WishMakers program, becoming one of the only college groups in Utah to take part.</p>
+
+            <p>When funding for the project was cut, the founders turned it into an official UVU club. Today, Wolverine Wishes is run by a student executive board and hosts the annual Wish Pageant, our biggest fundraiser of the year.</p>
+          </div>
+        </div>
       </section>
 
-      <section class="three-up">
-        <small>OUR JOURNEY</small>
-        <h2>Three years, three Wish Kids</h2>
-        <p>Each spring, our campaign is built around one local Wish Kid.</p>
-        <div></div>
-        <article class="card">
-          <small>2024 · $4,500 raised</small>
-          <h2>Quinn</h2>
-          <p>A Star Wars and soccer fan, Quinn played a match with the UVU men's soccer team and trained to become a Jedi, then revealed his wish to battle Darth Vader at Disney World.</p>
-        </article>
-        <article class="card">
-          <small>2026 · $13,000 raised</small>
-          <h2>Jade</h2>
-          <p>Jade loved princesses and ponies. The UVU Rodeo team hosted a rodeo just for her, and our club surprised her with a princess party at UVU's art museum.</p>
-        </article>
-        <article class="card">
-          <small>2026 · $2,500 raised</small>
-          <h2>Emmy</h2>
-          <p>At our first Wish Pageant, Emmy served as a judge, sang during the talent portion, and was crowned the first-ever Miss Wish Jr.</p>
-        </article>
+      <section class="journey">
+        <div class="journey-header">
+          <span class="journey-kicker">Our Journey</span>
+          <h2>Three years, three Wish Kids</h2>
+          <p>Each spring, our campaign is built around one local Wish Kid.</p>
+        </div>
+
+        <div class="journey-grid">
+          <article class="journey-card">
+            <span class="year">2024 · $4,500 raised</span>
+            <h3>Quinn</h3>
+            <p>A Star Wars and soccer fan, Quinn played a match with the UVU men’s soccer team and trained to become a Jedi before revealing his wish to battle Darth Vader at Disney World.</p>
+          </article>
+
+          <article class="journey-card">
+            <span class="year">2025 · $10,000 raised</span>
+            <h3>Jade</h3>
+            <p>Jade loved princesses and ponies. The UVU Rodeo team hosted a rodeo just for her, and our club surprised her with a princess party at UVU’s art museum.</p>
+          </article>
+
+          <article class="journey-card">
+            <span class="year">2026 · $13,000 raised</span>
+            <h3>Emmy</h3>
+            <p>At our first Wish Pageant, Emmy served as a judge, sang during the talent portion, and was crowned the first-ever Miss Wish Jr.</p>
+          </article>
+        </div>
       </section>
 
-      <section class="split-section">
-        <div class="split-image"><img src="images/Hannah-Make-a-Wish-flowers-550x310.jpg" alt="" /></div>
-        <div class="split-copy">
-          <small>ABOUT US</small>
-          <h3>UVU students granting wishes across Utah</h3>
-          <p>Learn more about our mission and the impact we make in the lives of children across Utah.</p>
-          <a class="text-link" href="about.html">Read our story</a>
+      <section class="purpose-section">
+        <div class="purpose-header">
+          <span class="purpose-kicker">Our purpose</span>
+          <h3>To raise funds for local wishes, help Wish Kids feel hope and happiness during a difficult time, and give UVU students real opportunities to serve and lead.</h3>
+        </div>
+
+        <div class="purpose-grid">
+          <article class="value-card">
+            <img src="images/fy25-blaze-your-path-7.jpg" alt="Service" />
+            <div class="value-body">
+              <span class="value-number">01</span>
+              <h3>Service</h3>
+              <p>We create opportunities for UVU students to serve and make a meaningful difference.</p>
+            </div>
+          </article>
+
+          <article class="value-card">
+            <img src="images/kid 6.jpg" alt="Leadership" />
+            <div class="value-body">
+              <span class="value-number">02</span>
+              <h3>Leadership</h3>
+              <p>Members build leadership and professional skills through hands-on, real-world service.</p>
+            </div>
+          </article>
+
+          <article class="value-card">
+            <img src="images/Hannah-Make-a-Wish-flowers-550x310.jpg" alt="Community" />
+            <div class="value-body">
+              <span class="value-number">03</span>
+              <h3>Community</h3>
+              <p>We bring people together to share a purpose and help grant local wishes.</p>
+            </div>
+          </article>
+
+          <article class="value-card">
+            <img src="images/logo.webp" alt="Partnership" />
+            <div class="value-body">
+              <span class="value-number">04</span>
+              <h3>Partnership</h3>
+              <p>With Make-A-Wish Utah, we turn our effort into life-changing moments for families.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="purpose-cta">
+        <div>
+          <span class="cta-kicker">Get involved</span>
+          <h2>Help us reach our 2027 goal</h2>
+          <p>Our goal for the 2027 Wish Pageant is $15,000, enough to fund more than two wishes. Every dollar goes to Make-A-Wish Utah’s Wish Granting Fund.</p>
+          <div class="cta-actions">
+            <a class="btn primary" href="donation.html">Donate now</a>
+            <a class="btn secondary" href="tickets.html">See the pageant</a>
+          </div>
+        </div>
+
+        <div class="purpose-cta-image">
+          <img src="images/kid 6.jpg" alt="Wish kid smiling" />
         </div>
       </section>
     </main>
