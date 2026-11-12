@@ -168,6 +168,100 @@
       border: 1px solid rgba(255, 255, 255, 0.3);
     }
 
+      .contestants-wrap {
+      background: #dfeaf5;
+      padding: 30px 52px 54px;
+    }
+
+    .contestants-header {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 22px;
+      flex-wrap: wrap;
+    }
+
+    .contestants-header h2 {
+      margin: 0;
+      color: var(--ink);
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      letter-spacing: -0.06em;
+      line-height: 1.1;
+    }
+
+    .contestants-header p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 520px;
+      line-height: 1.7;
+    }
+
+    .contestants-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(180px, 1fr));
+      gap: 24px;
+    }
+
+    .contestant-card {
+      background: #f6f3ee;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(17, 38, 70, 0.05);
+      display: flex;
+      flex-direction: column;
+      min-height: 430px;
+    }
+
+    .contestant-card .photo-wrap {
+      height: 230px;
+      overflow: hidden;
+      background: #dfeaf8;
+    }
+
+    .contestant-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .contestant-body {
+      padding: 18px 16px 16px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .contestant-body h3 {
+      margin: 0 0 8px;
+      color: var(--ink);
+      font-size: clamp(1.4rem, 2vw, 2rem);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+    }
+
+    .contestant-role {
+      display: inline-block;
+      margin-bottom: 12px;
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 800;
+      background: rgba(29, 111, 207, 0.08);
+      border-radius: 999px;
+      padding: 6px 8px;
+      width: fit-content;
+    }
+
+    .contestant-body p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
     .hero-image {
       position: relative;
       overflow: hidden;
@@ -592,6 +686,111 @@
         </article>
       </section>
 
+      <section class="contestants-wrap">
+        <div class="contestants-header">
+          <h2>2026 Wish Pageant contestants</h2>
+          <p>Cheer on this year's contestants and support the one who inspires you. Every dollar raised goes to Make-A-Wish Utah.</p>
+        </div>
+
+        <div class="contestants-grid">
+          <article class="contestant-card">
+            <div class="photo-wrap">
+              <img src="images/20260404_Clubs_The Wish Pageant_EM_01192.jpg" alt="Contestant One" />
+            </div>
+            <div class="contestant-body">
+              <h3>Contestant One</h3>
+              <span class="contestant-role">NURSING • SOPHOMORE</span>
+              <p>A two-sentence bio: where they’re from, what they study, and why they’re competing for Make-A-Wish.</p>
+              <a href="donation.html" class="support-link">Support contestant →</a>
+            </div>
+          </article>
+
+          <article class="contestant-card">
+            <div class="photo-wrap">
+              <img src="images/20260404_Clubs_The Wish Pageant_EM_04017.jpg" alt="Contestant Two" />
+            </div>
+            <div class="contestant-body">
+              <h3>Contestant Two</h3>
+              <span class="contestant-role">EDUCATION • JUNIOR</span>
+              <p>A two-sentence bio: where they’re from, what they study, and why they’re competing for Make-A-Wish.</p>
+              <a href="donation.html" class="support-link">Support contestant →</a>
+            </div>
+          </article>
+
+          <article class="contestant-card">
+            <div class="photo-wrap">
+              <img src="images/20260404_Clubs_The Wish Pageant_EM_00732.jpg" alt="Contestant Three" />
+            </div>
+            <div class="contestant-body">
+              <h3>Contestant Three</h3>
+              <span class="contestant-role">DANCE • FRESHMAN</span>
+              <p>A two-sentence bio: where they’re from, what they study, and why they’re competing for Make-A-Wish.</p>
+              <a href="donation.html" class="support-link">Support contestant →</a>
+            </div>
+          </article>
+
+          <article class="contestant-card">
+            <div class="photo-wrap">
+              <img src="images/20260404_Clubs_The Wish Pageant_EM_00387.jpg" alt="Contestant Four" />
+            </div>
+            <div class="contestant-body">
+              <h3>Contestant Four</h3>
+              <span class="contestant-role">BUSINESS • SENIOR</span>
+              <p>A two-sentence bio: where they’re from, what they study, and why they’re competing for Make-A-Wish.</p>
+              <a href="donation.html" class="support-link">Support contestant →</a>
+            </div>
+          </article>
+
+          <article class="contestant-card">
+            <div class="photo-wrap">
+              <img src="images/20260404_Clubs_The Wish Pageant_EM_00488.jpg" alt="Contestant Five" />
+            </div>
+            <div class="contestant-body">
+              <h3>Contestant Five</h3>
+              <span class="contestant-role">MEDIA • JUNIOR</span>
+              <p>A two-sentence bio: where they’re from, what they study, and why they’re competing for Make-A-Wish.</p>
+              <a href="donation.html" class="support-link">Support contestant →</a>
+            </div>
+          </article>
+
+          <article class="contestant-card">
+            <div class="photo-wrap">
+              <img src="images/20260404_Clubs_The Wish Pageant_EM_00507.jpg" alt="Contestant Six" />
+            </div>
+            <div class="contestant-body">
+              <h3>Contestant Six</h3>
+              <span class="contestant-role">PSYCHOLOGY • SOPHOMORE</span>
+              <p>A two-sentence bio: where they’re from, what they study, and why they’re competing for Make-A-Wish.</p>
+              <a href="donation.html" class="support-link">Support contestant →</a>
+            </div>
+          </article>
+
+          <article class="contestant-card">
+            <div class="photo-wrap">
+              <img src="images/20260404_Clubs_The Wish Pageant_EM_01812.jpg" alt="Contestant Seven" />
+            </div>
+            <div class="contestant-body">
+              <h3>Contestant Seven</h3>
+              <span class="contestant-role">THEATRE • SENIOR</span>
+              <p>A two-sentence bio: where they're from, what they study, and why they’re competing for Make-A-Wish.</p>
+              <a href="donation.html" class="support-link">Support contestant →</a>
+            </div>
+          </article>
+
+          <article class="contestant-card">
+            <div class="photo-wrap">
+              <img src="images/20260404_Clubs_The Wish Pageant_EM_01465.jpg" alt="Contestant Eight" />
+            </div>
+            <div class="contestant-body">
+              <h3>Contestant Eight</h3>
+              <span class="contestant-role">SCIENCE • FRESHMAN</span>
+              <p>A two-sentence bio: where they're from, what they study, and why they’re competing for Make-A-Wish.</p>
+              <a href="donation.html" class="support-link">Support contestant →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section class="faq-section">
         <div class="faq-copy">
           <span class="faq-kicker">FAQ</span>
@@ -609,7 +808,7 @@
           <details class="faq-item" open>
             <summary>
               <span>When and where is the pageant?</span>
-              <span class="toggle">−</span>
+              <span class="toggle">-</span>
             </summary>
             <div class="faq-answer">
               Saturday, April 4 on the UVU campus in Orem. Doors open at 6:30 PM and the
@@ -666,15 +865,6 @@
       <p>Granting wishes for children in our community.</p>
 
       <a href="https://www.instagram.com/wolverinewishes/" target="_blank" rel="noopener noreferrer">Instagram</a>
-
-      <nav class="footer-nav" aria-label="Footer navigation">
-        <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="pageants.html">Pageant</a></li>
-          <li><a href="donation.html">Donate</a></li>
-          <li><a href="makeawish.html">Make a Wish</a></li>
-        </ul>
-      </nav>
 
       <a class="btn primary" href="donation.html">Donate</a>
     </footer>
